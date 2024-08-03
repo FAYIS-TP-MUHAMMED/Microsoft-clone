@@ -1,0 +1,424 @@
+/*----------UNIVERSAL STYLES-----*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    color: rgb(17, 16, 16);
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/*----------HEADER STYLE SECTION-----*/
+.headerArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerArea{
+    background-color: white;
+    width: 100%;
+    height: 55px;
+}
+
+
+span.mobileDropdownButtons{
+    display: none;
+}
+img.mobileDropdownMenu ,img.mobileSearchBar{
+    margin-left: 10px;
+}
+
+
+.headerLeft, .headerLeft ul, .headerRight ul, .headerRight ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.headerLeft img{
+    width: 110px;
+    height: auto;
+    margin-left: 74px;   
+}
+.headerLeft img:hover{
+    cursor: pointer;
+}
+.headerLeft ul{
+    margin-left: 15px;
+}
+.headerLeft ul li , .headerRight ul li{
+    margin-left: 19px;
+    font-size: 13px;
+}
+.headerRight{
+    margin-right: 75px;
+}
+.headerRight span{
+    display: flex;
+}
+ul li a{
+    display: flex;
+    flex-direction: row;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.allMicrosoftClicked{
+    padding:12px 0px;
+    background-color: #f2f2f2;
+    outline: 1px dashed black;
+}
+.span2{
+    display: flex; 
+    align-items: center;
+}
+.span2 .overflow1{
+    height: 18px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+.more1ANDArrow{
+    margin-left: 17px;
+    padding:7px 0px;
+}
+ span.more1ANDArrow li:nth-child(2){
+    margin-left: 0px;
+    margin-top: 8px;
+}
+.overflow1 p{
+    width: 31px; 
+    margin-top: 1px;
+    display: flex;  
+    justify-content: end;
+}
+nav li p{
+    margin-top: 1px;
+}
+.overflow1 p, .overflow2 p{
+    display: flex;
+    flex-direction: row;
+}
+/* .overflow1 p img, .overflow2 p img{
+    margin-left: 0px;
+    width: 18px;
+} */
+
+
+
+@media screen and (max-width:1080px) {
+    .headerLeft img{
+        margin-left: 34px;
+    }
+    .headerRight{
+        margin-right: 34px;
+    }
+    .headerRight ul li{
+        margin-left: 13px;
+    }
+}
+/*----------- Adding underline for NAV  -----------*/
+
+ul li{
+    position: relative;
+}
+
+nav ul li a::after, .headerRight span p::after , .overflow2 p span::after, .overflow1 p::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.0s ease;
+ }
+ nav ul li a:hover::after, .headerRight span p:hover::after, .overflow2 p span:hover::after, .overflow1 p:hover::after{
+    transform: scaleX(1);
+ }
+
+
+ .headerRight span span li:nth-child(2){
+    margin-left: 0px;
+ }
+ 
+
+
+ /*----------HEADER STYLING ENDED-----*/
+
+
+ /*----------Overflow List1 & List2 start-----*/
+
+ nav ul span{
+    display: flex;
+ }
+ .overflow2{  
+    display: flex;
+    align-items: center;
+    height: 10px; margin-top: 22px;
+ }
+ .overflow2 p{
+    margin-bottom: 7px;
+ }
+
+ .more2ANDArrrow li.overflow2{
+    margin-left: 2px;
+ }
+ .more2ANDArrrow{
+    height: 49px;
+    margin-left: 17px;
+ }
+ .more2ANDArrrow li:nth-child(2){
+    margin-left: 0px; 
+    display: flex; align-items: center;
+ }
+ .more2ANDArrrow img , .span2 img{
+    width: 20px; margin-left: 0px;
+ }
+ .moreClicked{
+    background-color:#f2f2f2;
+    outline: 1px dashed black;
+}
+
+
+.overflowList1, .overflowList2{
+    display: none;
+ }
+ .overflowList1 li:hover{
+    text-decoration: underline;
+  }
+ .showList-1{
+    position: absolute;
+    top: 47px;
+    left: 522px;
+    right: 30%;
+    background-color: #f2f2f2;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+ }
+.showList-2{
+    position: absolute;
+    top: 47px;
+    left: 460px;
+    right: 30%;
+    background-color: #f2f2f2;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+
+ .overflowList1 ul, .overflowList2 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .overflowList1 li, .overflowList2 li{
+    padding: 20px;
+ }
+ /*----------Overflow List1 & List2 ends-----*/
+
+
+ /*----------Mobile Dropdown styles start-----*/
+ .mobileDropdownMenu{
+    margin-left: 4px;
+    padding: 3px;
+ }
+ .mobileSearchBar{
+    width: 24px;
+    margin-left: 6px;
+ }
+
+
+.mobileDropdown{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.mobileDropdownClicked{
+    display: block;
+}
+.mobileDropdown ul li{
+    font-size: 15px;
+    padding: 17px;
+    border-bottom: 1px solid rgb(223, 219, 219);
+}
+
+ ul li.viewSitemap{
+    border-bottom: 1px solid black;
+ }
+
+.mobileDropdown li p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobileDropdown li.subList{
+    padding: 0px;
+}
+li.subList ul li{
+  padding-left: 40px;
+}
+.subList{
+    display: none;
+}
+.showSubList{
+    display: block;
+}
+ /*----------Mobile Dropdown styles ended-----*/
+
+@media screen and  (min-width:1050px){
+.more1ANDArrow, .more2ANDArrrow{
+        display: none;
+    }
+.overflowList1{
+    display: none;
+}
+nav ul span li#surface{
+    margin-top: 0px;
+}
+}
+ @media screen and (min-width:950px) and (max-width:1049px){
+  nav ul .span1{
+    display: none;
+  }
+ .more2ANDArrrow{
+    display: none;
+  }
+  
+ }
+ @media screen and (min-width:860px) and (max-width:949px){
+    nav ul .span2{
+        display: none;
+    }
+ }
+ @media screen and (min-width:000px) and (max-width:859px){
+    .headerArea nav ul{
+        display: none;
+    }
+     ul span.allMicrosoftANDsearch{
+         display: none;
+    }
+    .headerRight{
+        margin-right:  17px;
+    }
+    span.mobileDropdownButtons{
+        display: flex;
+    }
+ }
+
+
+
+/*----------AllMicrosoft Dropdown style start-----*/
+section{
+    width: 100%;
+    position: absolute;
+    top: 47px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.dropdown-container{
+    width:90%;
+    display: none;
+}
+.showAllMicroDropdown{  
+    width:90%;
+    display: block;
+}
+
+.dropdown{
+    padding: 10px;
+    background-color:#f2f2f2;
+    width: 100%;
+    height: 440px;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-around;  
+}
+.dropdownSections{
+    padding: 7px;
+}
+.dropdownSections p{
+    font-size: 14px;
+    font-weight:500;
+}
+.dropdownSections ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    
+    margin-top: 30px;
+}
+.dropdownSections ul li{
+    margin-left: 0px;
+    margin-bottom: 28px;
+}
+.view-site-map{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #e6e6e6;
+}
+.view-site-map p{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    padding-top: 7px;
+}
+.view-site-map img{
+    margin-left: 3px;
+}
+.horizontalLine{
+    border: none;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+}
+
+/*-----------AllMicrosoft dropdown style ended -----------*/
+
+
+/*----------SLIDE SHOW SECTION-----*/
+
+.slideShow div img{
+    width: 100%;
+    height: 90vh;
+    /* overflow-y: hidden; */
+}
+/* .slideShow{
+    position: relative;
+}
+.slide{
+    position: absolute;
+    top: 0; right: 0;
+    transform: translateX(200%) ;
+    transition: transform 7s ease;
+}
+.active{
+    transform: translateX(0);
+
+} */
+
+
+
+
+

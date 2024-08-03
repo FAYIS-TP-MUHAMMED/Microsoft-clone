@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headerArea">
+            <span class="mobileDropdownButtons" >
+             <p onclick="showMobileDropdown()"><img class="mobileDropdownMenu" src="./Assets/svg/dropdownMenu.svg"></p>
+             <p><img class="mobileSearchBar" src="./Assets/svg/seach.svg"></p>
+            </span>
+            <nav class="headerLeft">
+                <img class="logoImage" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">             
+                <ul>
+                    <li><a href="index.html">Microsoft 365</a></li>
+                    <li><a>Teams</a></li>
+                    <li><a>Copilot</a></li>
+                    <li><a>Windows</a></li>
+                    <span class="more2ANDArrrow"  onclick="List2()">
+                      <li class="overflow2">                      
+                        <p><span>More</span></p>                        
+                       </li>
+                      <li>
+                        <img  id="image" src="./Assets/svg/downArrow.svg">
+                      </li>
+                    </span>
+
+                    <span class="span2">
+                      <li id="surface"><a>Surface</a></li>
+                      <span class="more1ANDArrow">                   
+                        <li class="overflow1" onclick="List1()"><p>More</p></li>
+                        <li onclick="List1()"><img style="width: 20px;" src="./Assets/svg/downArrow.svg"></li>
+                      </span>
+                    <span class="span1">
+                     <li><a>Xbox</a></li>
+                     <li><a>Support</a></li>
+                    </span>
+                  </span>
+                </ul>
+            </nav>
+            <div class="headerRight">
+                <ul>
+                    <span class="allMicrosoftANDsearch" >
+                     <span  onclick="allMicrosoftDropdown()" class="allMicrosoftANDArrow" >
+                      <li class=" allMicrosoft"><p>All Microsoft</p></a></li>
+                      <li><img  src="./Assets/svg/downArrow.svg"></li>
+                     </span>
+                     <li ><a><img src="./Assets/svg/seach.svg" width="21px" height="21px"></a></li>
+                    </span>
+                    <li ><a><img src="./Assets/svg/cart.svg" width="23px" height="23px"></a></li>
+                    <li><a><img src="./Assets/svg/profile.svg" width="33px" height="33px"></a></li>
+                </ul>
+               
+            </div>
+        </div>
+    </header>
+
+
+
+  <!-- overflowLists for more starts -->
+    <div class="overflowList1">
+      <ul>
+        <div>
+         <li><a>Xbox</a></li>
+         <li><a>Support</a></li>
+        </div>
+        <hr class="horizontalLine">
+      </ul>
+     </div>
+
+     <div class="overflowList2">
+      <ul>
+        <div>
+          <li><a>Surface</a></li>
+         <li><a>Xbox</a></li>
+         <li><a>Support</a></li>
+        </div>
+        <hr class="horizontalLine">
+      </ul>
+     </div>
+      <!-- overflowLists for more ends -->
+
+     <!-- MOBILE DROPDOWN stars-->
+     <div class="mobileDropdown">
+       <ul>
+         <li>Microsoft 365</li>
+         <li>Teams</li>
+         <li>Copilot</li>
+         <li>Windows</li>
+         <li>Surface</li>
+         <li>Xbox</li>
+         <li>Support</li>
+         <li onclick="softwareSubList()"><p>Software<img src="./Assets/svg/downArrow.svg"></p></li>
+          <li class="subList software">
+            <ul>
+             <li>Windows Apps</li>
+             <li>AI</li>
+             <li>OneDrive</li>
+             <li>Outlook</li>
+             <li>Skype</li>
+             <li>OneNote</li>
+             <li>Microsoft Teams</li>
+            </ul>
+          </li>         
+         <li onclick="pcsAndDevicesList()"><p>PCs & Devices<img src="./Assets/svg/downArrow.svg"></p></li>
+         <li class="subList pcs&devices ">
+           <ul>
+             <li>Shop Xbox</li>
+             <li>Accessories</li>
+           </ul>
+         </li>
+         <li onclick="EntertainmentList()"><p>Entertainment<img src="./Assets/svg/downArrow.svg"></p></li>
+         <li class="subList entertainment">
+           <ul>
+            <li>Xbox Game Pass Ultimate</li>
+            <li>Xbox games</li>
+            <li>PC games</li>
+            <li>Windows digital games</li>
+           </ul>
+         </li>
+         <li onclick="bussinessList()"><p>Bussiness<img src="./Assets/svg/downArrow.svg"></p></li>
+         <li class="subList bussiness">
+          <ul>
+            <li>Microsoft Cloud</li>
+            <li>Microsoft Security</li>
+            <li>Azure</li>
+            <li>Dynamic 365</li>
+            <li>Microsoft 365 for bussiness</li>
+            <li>Microsoft Industry</li>
+            <li>Microsoft Power Platform</li>
+            <li>Windows 365</li>
+          </ul>
+         </li>
+         <li onclick="developerAndITlist()"><p>Developer & IT<img src="./Assets/svg/downArrow.svg"></p></li>
+         <li class="subList DeveloperAndIT">
+          <ul>
+            <li>Developer Center</li>
+            <li>Documentation</li>
+            <li>Microsoft Learn</li>
+            <li>Microsoft Tech Community</li>
+            <li>Azure Marketplace</li>
+            <li>AppSource</li>
+            <li>Visual Studio</li>
+          </ul>
+         </li>
+         <li onclick="othersList()"><p>Others<img src="./Assets/svg/downArrow.svg"></p></li>
+         <li class="subList others">
+           <ul>
+            <li>Free downloads & security</li>
+            <li>Education</li>
+            <li>Gift Cards</li>
+            <li>Licensing</li>
+           </ul>
+         </li>
+         <li class="viewSitemap">View Sitemap</li>
+       </ul>
+     </div>
+     <!-- MOBILE DROPDOWN ends -->
+
+ 
+     <!--allMicrosoft dropdown starts -->
+    <section>
+    <div class="dropdown-container">
+      <div class="dropdown"> 
+        <div class="dropdownSections">
+            <p>Software</p>
+          <ul>
+            <li><a>Windows Apps</a></li>
+            <li><a>AI</a></li>
+            <li><a>OneDrive</a></li>
+            <li><a>Outlook</a></li>
+            <li><a>Skype</a></li>
+            <li><a>OneNote</a></li>
+            <li><a>Microsoft Teams</a></li>
+          </ul>
+        </div>
+        <div class="dropdownSections">
+            <p>PCs & Devices</p>
+          <ul>
+            <li><a>Shop Xbox</a></li>
+            <li><a>Accessories</a></li
+          </ul>
+        </div>
+        <div class="dropdownSections">
+            <p>Entertainment</p>
+          <ul>
+            <li><a>Xbox Game Pass Ultimate</a></li>
+            <li><a>Xbox games </a></li>
+            <li><a>  PC games</a></li>
+            <li><a>Windows digital games </a></li>         
+          </ul>
+        </div>
+        <div class="dropdownSections">
+            <p>Bussiness</p>
+          <ul>
+            <li><a>Microsoft Cloud</a></li>
+            <li><a> Microsoft Security</a></li>
+            <li><a>Azure</a></li>
+            <li><a>Dynamics 365</a></li>
+            <li><a>Microsoft 365 for business</a></li>
+            <li><a>Microsoft Industry</a></li>
+            <li><a> Microsoft Power Platform</a></li>
+            <li><a> Windows 365</a></li>
+          </ul>
+        </div>
+        <div class="dropdownSections">
+            <p>Developer & IT</p>
+          <ul>
+            <li><a>Developer Center</a></li>
+            <li><a>Documentation</a></li>
+            <li><a>Microsoft Learn</a></li>
+            <li><a>Microsoft Tech Community</a></li>
+            <li><a>Azure Marketplace</a></li>
+            <li><a>AppSource</a></li>
+            <li><a>Visual Studio</a></li>
+          </ul>
+        </div>
+        <div class="dropdownSections">
+            <p>Others</p>
+          <ul>
+            <li><a>Free downloads & security</a></li>
+            <li><a>Education</a></li>
+            <li><a>Gift Cards</a></li>
+            <li><a>Licensing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="view-site-map">
+        <p>VIEW SITEMAP<img src="./Assets/svg/angleRight.svg"></p>
+        <hr class="horizontalLine">
+      </div>
+     </div>  
+    </section>
+    <!--allMicrosoft dropdown Ends -->
+
+    <div class="slideShow">
+        <div class="slide">
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP4-1399x600">
+        </div>
+        <div class="slide">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP4-1399x600">
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
